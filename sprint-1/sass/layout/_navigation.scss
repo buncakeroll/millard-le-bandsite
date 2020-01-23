@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 5rem;
+    background: $black;
+
+
+    &--list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin: 1rem 0;
+        list-style: none;
+
+    }
+
+    &--logo {
+        padding-top: 0.5rem;
+        margin: 0 auto;
+    }
+
+    &--item {
+        padding-bottom: 0.7rem;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &--active {
+        border-bottom: 3px solid white;
+    }
+}

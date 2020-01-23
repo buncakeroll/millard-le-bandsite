@@ -1,20 +1,30 @@
 //base
-@import 'base/reset';
-@import 'base/typography';
+@import "base/reset";
+@import "base/typography";
 
 // abstracts
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
 // components
 
 // layout
-@import 'layout/navigation';
-@import 'layout/footer';
-@import 'layout/hero';
-@import 'layout/gallery';
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/hero";
+@import "layout/gallery";
 
 // pages
-@import 'pages/biography';
-@import 'pages/shows';
+@import "pages/biography";
+@import "pages/shows";
+
+main {
+  padding: 0 16px;
+}
+
+// Todo
+// fix nav bottom border to 160px
+// change gallery bg colour
+// tablet: 768px
+// desktop: 1200px
