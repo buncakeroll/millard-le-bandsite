@@ -1,3 +1,47 @@
 .footer {
+    padding: 2rem 1rem;
     background: $black;
+    color: $white;
+
+    &--title {
+        font-size: 2rem;
+    }
+
+    &--social {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style-type: none;
+
+        &-icon {
+            margin: 0 1rem 1.5rem 0;
+        }
+    }
+
+    &--name {
+        display: none;
+        font-weight: normal;
+
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &--heading {
+        margin: 0;
+    }
+
+    &--text {
+        padding: 0.25rem 0;
+        margin: 0;
+
+        &-top {
+            margin-top: 2rem;
+        }
+    }
+
+    &--copyright {
+        padding-top: 2rem;
+    }
 }

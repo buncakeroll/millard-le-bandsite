@@ -1,8 +1,32 @@
+$tablet-view: 768px;
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet-view) {
+        @content;
+    }
+}
+
+// Colours
 $black: #323232;
 $white: #FFFFFF;
-$grey: grey;
+$grey: #FAFAFA;
+
+@font-face {
+    font-family: 'avenir';
+    src: url('/millard-le-bandsite/sprint-1/assets/_Global\ Font/');
+}
+
+//Font Size
 
 .heading-2 {
     padding: 32px 0 24px;
     margin: 0;
+
+    @include tablet {
+        font-size: 2.25rem;
+    }
+}
+
+body {
+    color: $black;
 }

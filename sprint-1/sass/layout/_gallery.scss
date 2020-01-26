@@ -1,10 +1,42 @@
 .gallery {
     background: $grey;
 
+    @include tablet {
+        padding: 0 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .heading-2 {
+        padding: 3rem 0;
+    }
+
+    &--row {
+
+        @include tablet {
+            display: flex;
+        }
+    }
+
     &--image {
         display: block;
         padding-bottom: 1rem;
         margin: 0 auto;
         max-width: 100%;
+
+        @include tablet {
+            width: 33%;
+            padding: 0.75rem;
+
+            &:first-child {
+                padding-left: 0;
+                padding-right: 0.75rem;
+            }
+
+            &:last-child {
+                padding-right: 0;
+                padding-left: 0.75rem;
+            }
+        }
     }
+
 }

@@ -5,6 +5,10 @@
     height: 5rem;
     background: $black;
 
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+    }
 
     &--list {
         display: flex;
@@ -19,12 +23,21 @@
     &--logo {
         padding-top: 0.5rem;
         margin: 0 auto;
+
+        @include tablet {
+            padding: 0 0 0 1.5rem;
+            margin: 0;
+        }
     }
 
     &--item {
         padding-bottom: 0.7rem;
         color: $white;
         text-decoration: none;
+
+        @include tablet {
+            margin-left: 5rem;
+        }
     }
 
     &--active {
