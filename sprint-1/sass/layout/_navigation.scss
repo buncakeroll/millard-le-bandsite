@@ -31,16 +31,21 @@
     }
 
     &--item {
-        padding-bottom: 0.7rem;
+        display: inline-block;
         color: $white;
+        line-height: 1.85rem;
         text-decoration: none;
 
         @include tablet {
             margin-left: 5rem;
+            font-size: 1.25rem;
+            line-height: 4.5rem;
+        }
+
+        &__active {
+            border-bottom: 3px solid white;
         }
     }
 
-    &--active {
-        border-bottom: 3px solid white;
-    }
+
 }

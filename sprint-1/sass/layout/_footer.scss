@@ -3,8 +3,62 @@
     background: $black;
     color: $white;
 
+    @include tablet {
+        padding: 2rem 1.5rem;
+    }
+
+    &--row {
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &--bottom {
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &--column {
+
+        @include tablet {
+            padding: 0 1.5rem;
+        }
+
+        &:first-child {
+            @include tablet {
+                padding-left: 0;
+            }
+        }
+
+        &:last-child {
+            @include tablet {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &--heading,
+    &--text,
+    &--email {
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
     &--title {
         font-size: 2rem;
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
     }
 
     &--social {
@@ -14,8 +68,34 @@
         width: 100%;
         list-style-type: none;
 
+        @include tablet {
+            width: 33%;
+        }
+
         &-icon {
             margin: 0 1rem 1.5rem 0;
+
+            @include tablet {
+                margin: 0 0.9rem;
+            }
+
+            &:first-child {
+                padding-left: 1.5rem;
+                margin-left: 0;
+            }
+
+
+            img {
+                height: 1.8rem;
+
+                @include tablet {
+                    height: 1.4rem;
+                }
+            }
+        }
+
+        @include tablet {
+            align-items: center;
         }
     }
 
@@ -25,6 +105,8 @@
 
         @include tablet {
             display: block;
+            align-self: center;
+            font-size: 2.25rem;
         }
     }
 
@@ -43,5 +125,9 @@
 
     &--copyright {
         padding-top: 2rem;
+
+        @include tablet {
+            padding-top: 1rem;
+        }
     }
 }
