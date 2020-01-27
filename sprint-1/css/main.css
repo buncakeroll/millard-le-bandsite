@@ -36,37 +36,37 @@ body {
     .navbar {
       flex-direction: row;
       align-items: center; } }
-  .navbar--list {
+  .navbar__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
     margin: 1rem 0;
     list-style: none; }
-  .navbar--logo {
+  .navbar__logo {
     padding-top: 0.5rem;
     margin: 0 auto; }
     @media only screen and (min-width: 768px) {
-      .navbar--logo {
+      .navbar__logo {
         padding: 0 0 0 1.5rem;
         margin: 0; } }
     @media only screen and (min-width: 1200px) {
-      .navbar--logo {
+      .navbar__logo {
         padding: 0 0 0 11.25rem; } }
-  .navbar--item {
+  .navbar__item {
     display: inline-block;
     color: #FFFFFF;
     line-height: 1.85rem;
     text-decoration: none;
     transition: 1s; }
     @media only screen and (min-width: 768px) {
-      .navbar--item {
+      .navbar__item {
         margin-left: 5rem;
         font-size: 1.25rem;
         line-height: 4.5rem; } }
-    .navbar--item__active {
+    .navbar__item--active {
       border-bottom: 3px solid white; }
-    .navbar--item:hover {
+    .navbar__item:hover {
       color: red; }
 
 .footer {
@@ -80,90 +80,90 @@ body {
     .footer {
       padding: 2rem 10rem; } }
   @media only screen and (min-width: 768px) {
-    .footer--row {
+    .footer__row {
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
   @media only screen and (min-width: 768px) {
-    .footer--bottom {
+    .footer__bottom {
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
   @media only screen and (min-width: 1200px) {
-    .footer--bottom {
+    .footer__bottom {
       justify-content: left; } }
   @media only screen and (min-width: 768px) {
-    .footer--column {
+    .footer__column {
       padding: 0 1.5rem; } }
   @media only screen and (min-width: 768px) {
-    .footer--column:first-child {
+    .footer__column:first-child {
       padding-left: 0; } }
   @media only screen and (min-width: 768px) {
-    .footer--column:last-child {
+    .footer__column:last-child {
       padding-right: 0; } }
   @media only screen and (min-width: 1200px) {
-    .footer--column {
+    .footer__column {
       padding: 0 3rem; } }
   @media only screen and (min-width: 768px) {
-    .footer--heading, .footer--text, .footer--email {
+    .footer__heading, .footer__text, .footer__email {
       font-size: 1rem; } }
-  .footer--title {
+  .footer__title {
     font-size: 2rem; }
     @media only screen and (min-width: 768px) {
-      .footer--title {
+      .footer__title {
         font-size: 2.5rem; } }
-  .footer--social {
+  .footer__social {
     display: flex;
     padding: 0;
     margin: 0;
     list-style-type: none; }
     @media only screen and (min-width: 768px) {
-      .footer--social {
+      .footer__social {
         width: 33%; } }
     @media only screen and (min-width: 1200px) {
-      .footer--social {
+      .footer__social {
         width: 45%; } }
-    .footer--social-icon {
+    .footer__social-icon {
       margin: 0 1rem 1.5rem 0; }
       @media only screen and (min-width: 768px) {
-        .footer--social-icon {
+        .footer__social-icon {
           margin: 0 0.9rem; } }
-      .footer--social-icon:first-child {
+      .footer__social-icon:first-child {
         padding-left: 1.5rem;
         margin-left: 0; }
       @media only screen and (min-width: 1200px) {
-        .footer--social-icon {
+        .footer__social-icon {
           padding-left: 0; } }
-      .footer--social-icon img {
+      .footer__social-icon img {
         height: 1.8rem; }
         @media only screen and (min-width: 768px) {
-          .footer--social-icon img {
+          .footer__social-icon img {
             height: 1.4rem; } }
     @media only screen and (min-width: 768px) {
-      .footer--social {
+      .footer__social {
         align-items: center; } }
-  .footer--name {
+  .footer__name {
     display: none;
     font-weight: normal; }
     @media only screen and (min-width: 768px) {
-      .footer--name {
+      .footer__name {
         display: block;
         align-self: center;
         font-size: 2.25rem; } }
-  .footer--heading {
+  .footer__heading {
     margin: 0; }
-  .footer--text {
+  .footer__text {
     padding: 0.25rem 0;
     margin: 0; }
-    .footer--text-top {
+    .footer__text-top {
       margin-top: 2rem; }
-  .footer--copyright {
+  .footer__copyright {
     padding-top: 2rem; }
     @media only screen and (min-width: 768px) {
-      .footer--copyright {
+      .footer__copyright {
         padding-top: 1rem; } }
 
-.hero--content {
+.hero__content {
   display: flex;
   width: 100%;
   height: 18rem;
@@ -171,24 +171,24 @@ body {
   background-repeat: none;
   background-size: cover; }
   @media only screen and (min-width: 768px) {
-    .hero--content {
+    .hero__content {
       height: 25rem; } }
   @media only screen and (min-width: 1200px) {
-    .hero--content {
+    .hero__content {
       height: 42rem; } }
 
-.hero--heading {
+.hero__heading {
   align-self: center;
   padding: 0 5%;
   margin: 0;
   color: #FFFFFF;
   font-size: 2rem; }
   @media only screen and (min-width: 768px) {
-    .hero--heading {
+    .hero__heading {
       max-width: 45rem;
       font-size: 3.75rem; } }
   @media only screen and (min-width: 1200px) {
-    .hero--heading {
+    .hero__heading {
       padding-left: 11.25rem;
       max-width: 60rem;
       font-size: 5rem; } }
@@ -205,30 +205,30 @@ body {
       .gallery .heading-2 {
         padding: 3rem 0 3.25rem 8rem; } }
   @media only screen and (min-width: 1200px) {
-    .gallery--content {
+    .gallery__content {
       padding: 0 8rem;
       margin: 0 auto; } }
   @media only screen and (min-width: 768px) {
-    .gallery--row {
+    .gallery__row {
       display: flex; } }
-  .gallery--image {
+  .gallery__image {
     display: block;
     padding-bottom: 1rem;
     margin: 0 auto;
     max-width: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
-    .gallery--image:hover {
+    .gallery__image:hover {
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
     @media only screen and (min-width: 768px) {
-      .gallery--image {
+      .gallery__image {
         width: 33%;
         padding: 0.75rem; }
-        .gallery--image:first-child {
+        .gallery__image:first-child {
           padding-left: 0;
           padding-right: 0.75rem; }
-        .gallery--image:last-child {
+        .gallery__image:last-child {
           padding-right: 0;
           padding-left: 0.75rem; } }
 
@@ -240,60 +240,60 @@ body {
   .about {
     padding: 0 9rem; } }
 
-.about--image {
+.about__image {
   display: block;
   padding-bottom: 1.5rem;
   margin: 0 auto;
   max-width: 100%; }
   @media only screen and (min-width: 768px) {
-    .about--image {
+    .about__image {
       width: 100%;
       height: 450px;
       object-fit: cover; } }
   @media only screen and (min-width: 1200px) {
-    .about--image {
+    .about__image {
       width: 90%; } }
 
-.about--quote {
+.about__quote {
   font-size: 2rem; }
   @media only screen and (min-width: 1200px) {
-    .about--quote {
+    .about__quote {
       padding: 2.5rem 0;
       text-align: left; } }
-  .about--quote-author {
+  .about__quote-author {
     font-size: 1.5rem;
     margin: 32px 0 40px; }
     @media only screen and (min-width: 768px) {
-      .about--quote-author {
+      .about__quote-author {
         font-size: 1.25rem; } }
 
-.about--title {
+.about__title {
   font-size: 2rem; }
   @media only screen and (min-width: 1200px) {
-    .about--title {
+    .about__title {
       padding: 2.5rem 0; } }
 
 @media only screen and (min-width: 768px) {
-  .about--text {
+  .about__text {
     display: flex;
     justify-content: space-between; } }
 
-.about--text__item {
+.about__text--item {
   padding-bottom: 42px;
   margin: 0; }
   @media only screen and (min-width: 768px) {
-    .about--text__item {
+    .about__text--item {
       padding-left: 2rem;
       font-size: 1.3rem; } }
   @media only screen and (min-width: 1200px) {
-    .about--text__item {
+    .about__text--item {
       padding-left: 3rem; } }
   @media only screen and (min-width: 768px) {
-    .about--text__item:first-child {
+    .about__text--item:first-child {
       padding-left: 0; } }
 
 @media only screen and (min-width: 1200px) {
-  .about--quote, .about--quote-author, .about--title, .about--text {
+  .about__quote, .about__quote-author, .about__title, .about__text {
     width: 91%;
     margin: 0 auto; } }
 

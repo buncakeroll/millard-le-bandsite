@@ -8,7 +8,7 @@
         padding: 0 9rem;
     }
 
-    &--image {
+    &__image {
         display: block;
         padding-bottom: 1.5rem;
         margin: 0 auto;
@@ -25,7 +25,7 @@
         }
     }
 
-    &--quote {
+    &__quote {
         font-size: 2rem;
 
         @include desktop {
@@ -43,7 +43,7 @@
         }
     }
 
-    &--title {
+    &__title {
         font-size: 2rem;
 
         @include desktop {
@@ -51,14 +51,14 @@
         }
     }
 
-    &--text {
+    &__text {
 
         @include tablet {
             display: flex;
             justify-content: space-between;
         }
 
-        &__item {
+        &--item {
             padding-bottom: 42px;
             margin: 0;
 
@@ -79,10 +79,10 @@
         }
     }
 
-    &--quote,
-    &--quote-author,
-    &--title,
-    &--text {
+    &__quote,
+    &__quote-author,
+    &__title,
+    &__text {
 
         @include desktop {
             width: 91%;

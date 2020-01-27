@@ -14,21 +14,21 @@
         }
     }
 
-    &--content {
+    &__content {
         @include desktop {
             padding: 0 8rem;
             margin: 0 auto;
         }
     }
 
-    &--row {
+    &__row {
 
         @include tablet {
             display: flex;
         }
     }
 
-    &--image {
+    &__image {
         display: block;
         padding-bottom: 1rem;
         margin: 0 auto;

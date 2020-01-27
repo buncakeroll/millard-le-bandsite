@@ -10,7 +10,7 @@
         align-items: center;
     }
 
-    &--list {
+    &__list {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -20,7 +20,7 @@
 
     }
 
-    &--logo {
+    &__logo {
         padding-top: 0.5rem;
         margin: 0 auto;
 
@@ -34,7 +34,7 @@
         }
     }
 
-    &--item {
+    &__item {
         display: inline-block;
         color: $white;
         line-height: 1.85rem;
@@ -47,7 +47,7 @@
             line-height: 4.5rem;
         }
 
-        &__active {
+        &--active {
             border-bottom: 3px solid white;
         }
 
