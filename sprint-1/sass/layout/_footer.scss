@@ -11,6 +11,7 @@
         padding: 2rem 10rem;
     }
 
+    // to make top part of footer in row - message, social icons, name
     &__row {
 
         @include tablet {
@@ -20,6 +21,7 @@
         }
     }
 
+    // for bottom part of footer - company name, emails, etc
     &__bottom {
 
         @include tablet {
@@ -33,6 +35,7 @@
         }
     }
 
+    // for bottom part of footer to be made into columns
     &__column {
 
         @include tablet {
@@ -56,6 +59,7 @@
         }
     }
 
+    // font size for heading, text, and email
     &__heading,
     &__text,
     &__email {
