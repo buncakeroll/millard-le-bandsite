@@ -56,7 +56,8 @@ body {
     display: inline-block;
     color: #FFFFFF;
     line-height: 1.85rem;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: 1s; }
     @media only screen and (min-width: 768px) {
       .navbar--item {
         margin-left: 5rem;
@@ -64,6 +65,8 @@ body {
         line-height: 4.5rem; } }
     .navbar--item__active {
       border-bottom: 3px solid white; }
+    .navbar--item:hover {
+      color: red; }
 
 .footer {
   padding: 2rem 1rem;
@@ -210,7 +213,12 @@ body {
     display: block;
     padding-bottom: 1rem;
     margin: 0 auto;
-    max-width: 100%; }
+    max-width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    .gallery--image:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); }
     @media only screen and (min-width: 768px) {
       .gallery--image {
         width: 33%;

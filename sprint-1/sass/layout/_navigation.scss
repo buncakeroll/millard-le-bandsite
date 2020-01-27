@@ -39,6 +39,7 @@
         color: $white;
         line-height: 1.85rem;
         text-decoration: none;
+        transition: 1s;
 
         @include tablet {
             margin-left: 5rem;
@@ -48,6 +49,10 @@
 
         &__active {
             border-bottom: 3px solid white;
+        }
+
+        &:hover {
+            color: red;
         }
     }
 
