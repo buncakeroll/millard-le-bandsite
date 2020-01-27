@@ -1,3 +1,4 @@
+// misc
 $tablet-view: 768px;
 
 @mixin tablet {
@@ -11,9 +12,12 @@ $black: #323232;
 $white: #FFFFFF;
 $grey: #FAFAFA;
 
+// font face
+
+
 @font-face {
     font-family: 'avenir';
-    src: url('/millard-le-bandsite/sprint-1/assets/_Global\ Font/');
+    src: url('../assets/fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
 }
 
 //Font Size
@@ -30,4 +34,5 @@ $grey: #FAFAFA;
 
 body {
     color: $black;
+    font-family: 'avenir';
 }
