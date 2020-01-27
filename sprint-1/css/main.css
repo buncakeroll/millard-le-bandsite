@@ -24,7 +24,7 @@ body {
 
 body {
   color: #323232;
-  font-family: 'avenir'; }
+  font-family: 'avenir', 'roboto', sans-serif; }
 
 .navbar {
   display: flex;
