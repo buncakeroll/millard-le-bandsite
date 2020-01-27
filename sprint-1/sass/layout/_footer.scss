@@ -7,6 +7,10 @@
         padding: 2rem 1.5rem;
     }
 
+    @include desktop {
+        padding: 2rem 10rem;
+    }
+
     &--row {
 
         @include tablet {
@@ -22,6 +26,10 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+
+        @include desktop {
+            justify-content: left;
         }
     }
 
@@ -41,6 +49,10 @@
             @include tablet {
                 padding-right: 0;
             }
+        }
+
+        @include desktop {
+            padding: 0 3rem;
         }
     }
 
@@ -65,11 +77,14 @@
         display: flex;
         padding: 0;
         margin: 0;
-        width: 100%;
         list-style-type: none;
 
         @include tablet {
             width: 33%;
+        }
+
+        @include desktop {
+            width: 45%;
         }
 
         &-icon {
@@ -84,6 +99,9 @@
                 margin-left: 0;
             }
 
+            @include desktop {
+                padding-left: 0;
+            }
 
             img {
                 height: 1.8rem;

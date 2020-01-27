@@ -8,6 +8,17 @@
 
     .heading-2 {
         padding: 3rem 0;
+
+        @include desktop {
+            padding: 3rem 0 3.25rem 8rem
+        }
+    }
+
+    &--content {
+        @include desktop {
+            padding: 0 8rem;
+            margin: 0 auto;
+        }
     }
 
     &--row {

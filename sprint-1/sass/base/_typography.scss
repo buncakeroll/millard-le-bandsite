@@ -19,8 +19,9 @@ $grey: #FAFAFA;
 //Font Size
 
 .heading-2 {
-    padding: 32px 0 24px;
+    padding: 40px 0 30px;
     margin: 0;
+    font-size: 3rem;
 
     @include tablet {
         font-size: 2.25rem;

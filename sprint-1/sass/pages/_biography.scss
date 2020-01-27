@@ -4,6 +4,10 @@
         padding: 0 1.6rem;
     }
 
+    @include desktop {
+        padding: 0 9rem;
+    }
+
     &--image {
         display: block;
         padding-bottom: 1.5rem;
@@ -15,18 +19,76 @@
             height: 450px;
             object-fit: cover;
         }
+
+        @include desktop {
+            width: 90%;
+        }
     }
 
     &--quote {
+        font-size: 2rem;
+
+        @include desktop {
+            padding: 2.5rem 0;
+            text-align: left;
+        }
 
         &-author {
+            font-size: 1.5rem;
             margin: 32px 0 40px;
+
+            @include tablet {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    &--title {
+        font-size: 2rem;
+
+        @include desktop {
+            padding: 2.5rem 0;
         }
     }
 
     &--text {
-        padding-bottom: 42px;
-        margin: 0;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            padding-bottom: 42px;
+            margin: 0;
+
+            @include tablet {
+                padding-left: 2rem;
+                font-size: 1.3rem;
+            }
+
+            @include desktop {
+                padding-left: 3rem;
+            }
+
+            &:first-child {
+                @include tablet {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    &--quote,
+    &--quote-author,
+    &--title,
+    &--text {
+
+        @include desktop {
+            width: 91%;
+            margin: 0 auto;
+
+        }
     }
 
 }
