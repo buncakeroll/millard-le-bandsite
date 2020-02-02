@@ -1,0 +1,60 @@
+.gallery {
+    background: $grey;
+
+    @include tablet {
+        padding: 0 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .heading-2 {
+        padding: 3rem 0;
+
+        @include desktop {
+            padding: 3rem 0 3.25rem 8rem
+        }
+    }
+
+    &__content {
+        @include desktop {
+            padding: 0 8rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__row {
+
+        @include tablet {
+            display: flex;
+        }
+    }
+
+    &__image {
+        display: block;
+        padding-bottom: 1rem;
+        margin: 0 auto;
+        max-width: 100%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+
+        @include tablet {
+            width: 33%;
+            padding: 0.75rem;
+
+            &:first-child {
+                padding-left: 0;
+                padding-right: 0.75rem;
+            }
+
+            &:last-child {
+                padding-right: 0;
+                padding-left: 0.75rem;
+            }
+        }
+    }
+
+}
