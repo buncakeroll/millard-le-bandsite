@@ -145,6 +145,11 @@
         }
     }
 
+    &__email a {
+        color: $white;
+        text-decoration: none;
+    }
+
     &__copyright {
         padding-top: 2rem;
 

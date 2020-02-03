@@ -8,12 +8,14 @@
 @import "abstracts/variables";
 
 // components
-
+@import "components/buttons";
+@import "components/music-player";
 // layout
 @import "layout/navigation";
 @import "layout/footer";
 @import "layout/hero";
 @import "layout/gallery";
+@import "layout/comments";
 
 // pages
 @import "pages/biography";
