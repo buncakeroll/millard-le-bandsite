@@ -1,0 +1,160 @@
+.footer {
+    padding: 2rem 1rem;
+    background: $black;
+    color: $white;
+
+    @include tablet {
+        padding: 2rem 1.5rem;
+    }
+
+    @include desktop {
+        padding: 2rem 10rem;
+    }
+
+    // to make top part of footer in row - message, social icons, name
+    &__row {
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    // for bottom part of footer - company name, emails, etc
+    &__bottom {
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            justify-content: left;
+        }
+    }
+
+    // for bottom part of footer to be made into columns
+    &__column {
+
+        @include tablet {
+            padding: 0 1.5rem;
+        }
+
+        &:first-child {
+            @include tablet {
+                padding-left: 0;
+            }
+        }
+
+        &:last-child {
+            @include tablet {
+                padding-right: 0;
+            }
+        }
+
+        @include desktop {
+            padding: 0 3rem;
+        }
+    }
+
+    // font size for heading, text, and email
+    &__heading,
+    &__text,
+    &__email {
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+
+        @include tablet {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        @include tablet {
+            width: 33%;
+        }
+
+        @include desktop {
+            width: 45%;
+        }
+
+        &-icon {
+            margin: 0 1rem 1.5rem 0;
+
+            @include tablet {
+                margin: 0 0.9rem;
+            }
+
+            &:first-child {
+                padding-left: 1.5rem;
+                margin-left: 0;
+            }
+
+            @include desktop {
+                padding-left: 0;
+            }
+
+            img {
+                height: 1.8rem;
+
+                @include tablet {
+                    height: 1.4rem;
+                }
+            }
+        }
+
+        @include tablet {
+            align-items: center;
+        }
+    }
+
+    &__name {
+        display: none;
+        font-weight: normal;
+
+        @include tablet {
+            display: block;
+            align-self: center;
+            font-size: 2.25rem;
+        }
+    }
+
+    &__heading {
+        margin: 0;
+    }
+
+    &__text {
+        padding: 0.25rem 0;
+        margin: 0;
+
+        &-top {
+            margin-top: 2rem;
+        }
+    }
+
+    &__email a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__copyright {
+        padding-top: 2rem;
+
+        @include tablet {
+            padding-top: 1rem;
+        }
+    }
+}

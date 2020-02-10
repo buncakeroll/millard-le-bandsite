@@ -1,0 +1,151 @@
+#comments__section {
+    padding: 0 5%;
+    margin: 0 02rem;
+
+    @include tablet {
+        padding: 0 5%;
+        margin: 0 15% 22rem;
+    }
+
+    @include desktop {
+        padding: 0 15%;
+        margin: 0 20% 1.5rem;
+    }
+}
+
+.comments {
+    padding: 0 5%;
+
+    @include desktop {
+        padding: 0 12.5%;
+        margin: 3rem 0;
+    }
+
+    &__header {
+        @include desktop {
+            margin: 0 0 3rem;
+            font-size: 3rem;
+        }
+    }
+
+    &__form-box {
+        display: flex;
+        border-bottom: 2px solid $black;
+    }
+
+    &__form {
+        &-section {
+            width: 80%;
+            margin-left: auto;
+        }
+
+        &-header {
+            margin: 0 0 0.5rem 0;
+            text-transform: uppercase;
+            color: $black;
+        }
+
+        &-box {
+            @include tablet {
+                margin: 0 15%;
+            }
+
+            @include desktop {
+                padding: 0;
+                margin: 0 25%;
+            }
+        }
+
+        &-textbox {
+            width: 100%;
+            height: 6rem;
+            background: $grey;
+            border: 2px solid $black;
+        }
+
+        &-name {
+            width: 100%;
+            height: 2rem;
+            margin: 0 0 1rem;
+            background-color: $grey;
+            border-radius: 5px;
+            border: 2px solid $black;
+        }
+    }
+
+    &__like-number {
+        display: inline;
+        padding: 0 1rem 0 0;
+    }
+}
+
+.commentsSection {
+    display: flex;
+    padding: 0 5%;
+    margin-top: 1rem;
+    border-bottom: 2px solid $black;
+
+    @include desktop {
+        padding: 0;
+        margin: 1rem 0 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    &__date {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    &__avatar {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+
+        &--form {
+            margin: 2rem 0 0;
+        }
+    }
+
+    &__content {
+        width: 85%;
+        margin: 0 0 1.5rem 1.5rem;
+    }
+
+    &__comment {
+        padding: 0 0 1rem;
+        margin: 0;
+    }
+
+    @include tablet {
+        &__avatar {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+}
+
+.delBtn {
+    float: right;
+    cursor: pointer;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.comment-box__like-btn {
+    cursor: pointer;
+
+    &:hover {
+        color: $pink;
+    }
+}

@@ -1,0 +1,12 @@
+// break points for tablet @ 768px and for desktop @ 1200px
+@mixin tablet {
+    @media only screen and (min-width: $tablet-view) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: $desktop-view) {
+        @content;
+    }
+}

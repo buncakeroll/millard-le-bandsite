@@ -1,0 +1,77 @@
+.show {
+
+    &__content {
+        margin: 2rem 1 rem;
+
+        @include tablet {
+            padding: 0 5%;
+            margin: 3rem 2rem;
+        }
+
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5%;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        text-align: left;
+
+        @include desktop {
+            width: 75%;
+            margin: 2rem 0 0;
+        }
+
+        &-mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-show {
+            border-bottom: 1px solid $black;
+        }
+
+        &-header {
+            color: $black;
+            font-size: 1 rem;
+            font-weight: bold;
+
+            &:first-child {
+                margin: 1rem 0 0;
+            }
+        }
+    }
+
+    &__header {
+        font-size: 2rem;
+
+        @include tablet {
+            font-size: 4rem;
+        }
+
+        @include desktop {
+            font-size: 2.75rem;
+        }
+    }
+
+    &__info {
+        font-size: 1rem;
+
+        &:not(:last-child) {
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        @include tablet {
+            font-size: 1 rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid $black;
+
+            &:nth-child(1) {
+                font-weight: bold;
+            }
+        }
+    }
+
+}

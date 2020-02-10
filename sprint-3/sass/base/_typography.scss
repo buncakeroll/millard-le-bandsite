@@ -1,0 +1,38 @@
+// misc - had to include or would get error
+$tablet-view: 768px;
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet-view) {
+        @content;
+    }
+}
+
+// colour palette
+$black: #323232;
+$white: #FFFFFF;
+$grey: #FAFAFA;
+$pink: pink;
+$red: red;
+
+// font face
+@font-face {
+    font-family: 'avenir';
+    src: url('../assets/fonts/AvenirNextProLT/AvenirNextLTPro-Regular.otf');
+}
+
+// font Size
+.heading-2 {
+    padding: 40px 0 30px;
+    margin: 0;
+    font-size: 3rem;
+
+    @include tablet {
+        font-size: 2.25rem;
+    }
+}
+
+// default font colour and default font family
+body {
+    color: $black;
+    font-family: 'avenir', 'roboto', sans-serif;
+}

@@ -1,0 +1,11 @@
+.music-player {
+    margin: 4rem auto 0;
+    width: 90%;
+    height: 200px;
+    margin-bottom: 64px;
+
+    @include tablet {
+        max-width: 436px;
+        max-height: 146px;
+    }
+}
